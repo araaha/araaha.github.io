@@ -32,11 +32,11 @@ pre {
   -webkit-overflow-scrolling: touch;
 }
 
-pre code[class*="language-"] {
+pre code[data-lang] {
   -webkit-overflow-scrolling: touch;
 }
 
-pre code[class*="language-"]::before {
+pre code[data-lang]::before {
   background: #7daea3;
   border-radius: 0 0 0 0;
   color: black;
@@ -51,45 +51,38 @@ pre code[class*="language-"]::before {
   top: 0;
 }
 
-pre code[class="language-javaScript"]::before,
-pre code[class="language-js"]::before {
+pre code[data-lang="javascript"]::before {
   content: "js";
 }
 
-pre code[class*="language-yml"]::before,
-pre code[class*="language-yaml"]::before {
+pre code[data-lang="yaml"]::before {
   content: "yaml";
 }
 
-pre code[class*="language-shell"]::before,
-pre code[class*="language-bash"]::before,
-pre code[class*="language-sh"]::before {
+pre code[data-lang="shellscript"]::before {
   content: "shell";
 }
 
-pre code[class*="language-json"]::before {
+pre code[data-lang="json"]::before {
   content: "json";
 }
 
-pre code[class*="language-python"]::before,
-pre code[class*="language-py"]::before {
+pre code[data-lang="python"]::before {
   content: "py";
 }
 
-pre code[class*="language-css"]::before {
+pre code[data-lang="css"]::before {
   content: "css";
 }
 
-pre code[class*="language-go"]::before {
+pre code[data-lang="go"]::before {
   content: "Go";
 }
 
-pre code[class*="language-md"]::before,
-pre code[class*="language-md"]::before {
+pre code[data-lang="markdown"]::before {
   content: "Markdown";
 }
 
-pre code[class*="language-rust"]::before,
-pre code[class*="language-rs"]::before {
+pre code[data-lang="rust"]::before {
   content: "rust";
 }
